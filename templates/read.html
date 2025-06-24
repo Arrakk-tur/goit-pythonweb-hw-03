@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Messages</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Messages:</h1>
+  <ul>
+    {% for timestamp, entry in messages.items() %}
+    <li>
+      <strong>{{ timestamp }}</strong><br/>
+      From: {{ entry.username }}<br/>
+      Message: {{ entry.message }}
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>
