@@ -3,7 +3,7 @@ version: '3.9'
 services:
   webapp:
     build: .
-    container_name: hw03
+    container_name: hw_03
     ports:
       - "3000:3000"
     volumes:
