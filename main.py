@@ -98,7 +98,6 @@ class HttpHandler(BaseHTTPRequestHandler):
 def run(server_class=HTTPServer, handler_class=HttpHandler):
     server_address = ('', 3000)
     httpd = server_class(server_address, handler_class)
-    print("Starting server on port 3000...")
     httpd.serve_forever()
 
 if __name__ == '__main__':
